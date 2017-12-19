@@ -1,7 +1,5 @@
 occamsrazor-history-browser
 ===========================
-[![Build Status](https://travis-ci.org/sithmel/occamsrazor-history-browser.svg?branch=master)](https://travis-ci.org/sithmel/occamsrazor-history-browser)
-
 This function provides a bridge between the history API and the event bus created using [occamsrazor](https://github.com/sithmel/occamsrazor.js)
 It exposes a convenient "changestate" event that fires when pushstate/replacestate are called or popstate event is triggered.
 See the [history API](https://developer.mozilla.org/en-US/docs/Web/API/History_API)
