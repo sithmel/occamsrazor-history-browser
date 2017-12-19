@@ -1,0 +1,43 @@
+{
+  "name": "occamsrazor-history-browser",
+  "version": "0.0.1",
+  "description": "it bridges the browser history API with occamsrazor events",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/**/*.js",
+    "watch": "npm run test -- -w",
+    "lint": "eslint --fix --ext .js ./index.js ./tests",
+    "release:major": "./node_modules/.bin/npm-release major",
+    "release:minor": "./node_modules/.bin/npm-release minor",
+    "release:patch": "./node_modules/.bin/npm-release patch",
+    "precommit": "npm run lint",
+    "prepush": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sithmel/occamsrazor-history-browser.git"
+  },
+  "keywords": [
+    "events",
+    "history"
+  ],
+  "author": "Maurizio Lupo <maurizio.lupo@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "eslint": "^4.13.1",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "husky": "^0.10.2",
+    "mocha": "^2.1.0",
+    "npm-release": "^1.0.0",
+    "occamsrazor": "^7.1.0",
+    "sinon": "^4.1.3"
+  },
+  "peerDependencies": {
+    "occamsrazor": "^7.1.0"
+  }
+}
