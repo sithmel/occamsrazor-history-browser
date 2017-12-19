@@ -1,6 +1,6 @@
 {
   "name": "occamsrazor-history-browser",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "it bridges the browser history API with occamsrazor events",
   "main": "index.js",
   "scripts": {
